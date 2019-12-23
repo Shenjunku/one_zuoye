@@ -79,7 +79,7 @@ height: 1.5rem;
 
 .da_tu>img {
     width: 22.5rem;
-    height: 12.23rem;
+    height: 12.12rem;
     margin-bottom: 0.3rem;
 }
 
@@ -185,4 +185,34 @@ height: 1.5rem;
 }
 .neiron_kuai{
     margin-bottom: 2rem;
+    width: 22.5rem;
+}
+.zuihou {
+    width: 22.5rem;
+   
+    
+}
+.zuihou_shi{
+    width: 22.5rem;
+    /* height: 9rem; */
+    overflow-x: scroll;
+    display: flex;
+}
+/* 自定义浏览器滚动条 */
+
+.zuihou_shi::-webkit-scrollbar {
+    display: none;
+}
+
+.zuihou_shi>div {
+    flex: none;
+    margin-right: 1.8rem;
+    font-size: 1rem;
+}
+.dianshi{
+    width: 22.5rem;
+}
+.evey{
+    width: 23.44rem;
+    height: 34rem;
 }

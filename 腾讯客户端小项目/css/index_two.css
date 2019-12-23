@@ -1,0 +1,79 @@
+.d_biaoti {
+    width: 22.5rem;
+    height: 2.56rem;
+    overflow-x: scroll;
+    display: flex;
+}
+
+/* 自定义浏览器滚动条 */
+
+.d_biaoti::-webkit-scrollbar {
+    display: none;
+}
+
+.d_biaoti>span {
+    flex: none;
+    margin-right: 1.8rem;
+    font-size: 1rem;
+}
+.d_neiron{
+    width: 22.5rem;
+}
+.d_neiron>img {
+    width: 22.5rem;
+    height: 13.11rem;
+    
+}
+
+.d_neiron_zero {
+    display: flex;
+    width: 22.5rem;
+    height: 1.88rem;
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+}
+.d_neiron_one{
+    flex: 2.5;
+}
+.d_neiron_two{
+    flex: 1;
+    line-height: 2.3rem;
+}
+.d_neiron_one>span{
+    vertical-align:bottom;
+    width: 4.38rem;
+    height: 1.88rem;
+    display: inline-block;
+    line-height: 1.88rem;
+    color: rgba(128, 128, 128, 1);
+	background-color: rgba(166, 166, 166, 0.1);
+	border-radius: 0.95rem;
+    font-size: 0.75rem;
+    text-align: center;
+}
+.d_neiron_one>img {
+    width: 1.88rem;
+    height: 1.88rem;
+    border-radius: 50%;
+    vertical-align:bottom;
+    margin-left: 1rem;
+} 
+
+.d_neiron_two>img {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.65rem;
+}
+.d_neiron{
+    position: relative;
+}
+.d_neiron_biao{
+    position: absolute;
+    width: 21rem;
+    height: 3rem;
+    left: 1rem;
+    top: 1rem;
+    color: rgba(255, 255, 255, 1);
+    font-size: 1rem;
+    font-weight: bold;
+}
