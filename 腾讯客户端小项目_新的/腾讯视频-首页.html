@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .jiemian {
+            width: 23.44rem;
+            height: 40.5rem;
+            box-shadow: 2px 2px 48px #888888;
+
+        }
+
+        .taohang {
+            width: 23.44rem;
+            height: 4rem;
+
+        }
+
+        .neiron {
+            width: 22.5rem;
+            height: 34rem;
+            margin: 0px auto;
+            overflow:scroll;
+        }
+
+        .sousuo {
+            width: 22.5rem;
+            height: 1.63rem;
+            line-height: 1.63rem;
+            margin-bottom: 1rem;
+        }
+
+        .sou_img {
+            width: 1.63rem;
+            height: 1.63rem;
+            display: inline-block;
+            vertical-align: bottom;
+            margin-right: 0.5rem;
+
+        }
+
+        .sou_img>img {
+            widows: 1.63em;
+            ;
+            height: 1.63rem;
+        }
+
+        .sou_wen {
+            width: 8.25rem;
+            height: 1.12rem;
+            font-size: 1rem;
+            border: none;
+        }
+
+        .da_tu {
+            width: 22.5rem;
+            height: 13.84rem;
+            margin-bottom: 1rem;
+            position: relative;
+        }
+
+        .da_tu>img {
+            width: 22.5rem;
+            height: 12.23rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .da_du_sp1 {
+
+            width: 16.63rem;
+            height: 1.31rem;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+        .da_du_sp2{
+            width: 5rem;
+            height: 1.12rem;
+            font-size: 0.55rem;
+            position: absolute;
+            bottom: 2rem;
+            right: 0.2rem;
+            color: white;
+            text-align: right;
+        }
+        /* 视屏内容区 */
+        .biao_ti {
+            width: 14rem;
+            height: 1.69rem;
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 0.3rem;
+        }
+
+        .vido_ge {
+            width: 10.5rem;
+            height: 9rem;
+            display: inline-block;
+            vertical-align: bottom;
+            position:relative;
+            margin-bottom: 0.8rem;
+            
+        }
+
+        .vido_ge>img {
+            width: 10.5rem;
+            height: 5.9rem;
+        }
+
+        .vido_ge>span {
+            display: block;
+            margin: 0.3rem 0 0.3rem 0;
+        }
+
+        .vido_sp1 {
+            width: 10.5rem;
+            height: 1.31rem;
+            font-size: 0.88rem;
+        }
+
+        .vido_sp2 {
+            width: 10.5rem;
+            height: 1.12rem;
+            font-size: 0.75rem;
+            color: rgba(166, 166, 166, 1);
+        }
+        .vido_sp3{
+            width: 5rem;
+            height: 1.12rem;
+            font-size: 0.55rem;
+            position: absolute;
+            bottom: 3rem;
+            right: 0.2rem;
+            color: white;
+            text-align: right;
+        }
+        .xia_hua {
+            margin-top: 0.5rem;
+            width: 22.5rem;
+            height: 0.06rem;
+            background-color: rgb(136, 135, 133);
+        }
+
+        .huang_yi>span {
+            display: inline-block;
+            width: 3.75rem;
+            height: 1.12rem;
+            font-size: 0.75rem;
+
+        }
+
+        .huang_yi {
+            /* display: inline-block; */
+            width: 5rem;
+            height: 1.12rem;
+            margin: 0 auto;
+        }
+
+        .huang_yi>div>img {
+            display: inline-block;
+            width: 0.88rem;
+            height: 0.88rem;
+        }
+
+        .huang_yi>div {
+            display: inline-block;
+            vertical-align: bottom;
+        }
+        .neiron_kuai{
+            margin-bottom: 2rem;
+        }
+        /*  */
+    </style>
+</head>
+
+<body>
+    <div class="jiemian">
+        <!-- 导航条 -->
+        <div class="taohang"></div>
+        <!-- 内容 -->
+        <div class="neiron">
+            <!-- 搜索 -->
+            <div class="sousuo">
+                <div class="sou_img">
+                    <img src="./images/图标 5.svg">
+    
+                </div>
+                <input type="text" placeholder="请输入片名 主演或导演" class="sou_wen">
+            </div>
+            <!-- 轮播图 -->
+            <div class="da_tu">
+                <img src="./images/图片2.jpg">
+                <span class="da_du_sp1">【猎毒人】吕云鹏计划通楚天南中风下线？</span>
+                <span class="da_du_sp2">更新至44集</span>
+            </div>
+        
+        </div>
+
+      <!-- 按键区域 -->
+    <div class="anjian"></div>
+    </div>
+    
+</body>
+<script src="../../../web前端/jQuery/jquery-3.4.1.min.js"></script>
+<script>
+    var goods = [
+        {
+            shop_name: "暑假刷片看这里！",
+            good: [
+                {
+                    img: "16.jpeg",
+                    biaoti: "小戏骨MV·外卖小哥",
+                    pinglun: "萌娃致敬烈日下劳动者",
+                    tishi:"更新至44集"
+                },
+                {
+                    img: "1.jpeg",
+                    biaoti: "惹上冷殿下·8.8首播",
+                    pinglun: "迷妹撩爱豆 饭圈高糖恋",
+                    tishi:"更新至44集"
+                },
+                {
+                    img: "4.jpeg",
+                    biaoti: "明日之子·第二季",
+                    pinglun: "华晨宇痛哭不舍文兆杰",
+                    tishi:"更新至44集"
+                },
+                {
+                    img: "5.jpeg",
+                    biaoti: "入戏·李宏毅",
+                    pinglun: "25岁前结婚这想法没变！",
+                    tishi:"更新至44集"
+                },
+                {
+                    img: "6.jpeg",
+                    biaoti: "幸福三重奏悠享版",
+                    pinglun: "S姐妹召开消灭四害研讨会",
+                    tishi:"更新至44集"
+                },
+                {
+                    img: "7.jpeg",
+                    biaoti: "火箭少女101研究所",
+                    pinglun: "宣仪跳浮夸舞蹈wink超可爱",
+                    tishi:"更新至44集"
+                },
+                {
+                    img: "2.jpeg",
+                    biaoti: "南方有乔木 TV版",
+                    pinglun: "陈伟霆腹黑开撩白百何",
+                    tishi:"更新至44集"
+                },
+                {
+                    img: "3.jpeg",
+                    biaoti: "爱情进化论·8.2首播",
+                    pinglun: "张若昀偷吻张天爱",
+                    tishi:"更新至44集"
+                }
+            ]
+           
+        },
+        {
+            shop_name: "热闻一览",
+            good: [
+                {
+                    img: "8.jpeg",
+                    biaoti: "马航MH370事件“终极报告”今天将出炉！",
+                    pinglun: "",
+                    tishi:"05:56"
+                },
+                {
+                    img: "9.jpeg",
+                    biaoti: "8月起这些新规将实施 我们都将收到这样一条短信",
+                    pinglun: "",
+                    tishi:"05:56"
+                },
+                {
+                    img: "10.jpeg",
+                    biaoti: "孟美岐演讲实录：我就是那个拿了第一名的女孩",
+                    pinglun: "",
+                    tishi:"05:56"
+                },
+                {
+                    img: "11.jpeg",
+                    biaoti: "迷妹专访101|yamy：很喜欢有遗憾的感觉",
+                    pinglun: "",
+                    tishi:"05:56"
+                },
+                {
+                    img: "12.jpeg",
+                    biaoti: "SNH48总决选前三专访：李艺彤自称未来一片辉煌",
+                    pinglun: "",
+                    tishi:"05:56"
+                },
+                {
+                    img: "13.jpeg",
+                    biaoti: "真正的金缕玉衣！古人葬礼都这么奢侈吗",
+                    pinglun: "",
+                    tishi:"05:56"
+                }
+            ]
+           
+        },
+        {
+            shop_name: "明日之子·九大厂牌候选人",
+            good: [
+                {
+                    img: "14.jpeg",
+                    biaoti: "九大厂牌候选人争夺战",
+                    pinglun: "2018-07-28 第5期",
+                    tishi:"2018-7-28"
+                },
+                {
+                    img: "15.jpeg",
+                    biaoti: "升级战13强冲出重围",
+                    pinglun: "2018-07-21 第4期 ",
+                    tishi:"2018-7-21"
+                }
+            ]
+           
+        }
+
+    ]
+
+
+    var content_str = ""
+    for (var i = 0; i < goods.length; i++) {
+        var one_date = goods[i]
+        // console.log(one_date)
+        content_str += `<div class="neiron_kuai">
+         <div class="biao_ti">`+goods[i].shop_name+`</div>`
+         for(var k=0;k<one_date.good.length;k++){
+            //  console.log(one_date.good[k])
+             var one_goods=one_date.good[k]
+             content_str+=`<div class="vido_ge">
+                   <img src="./images/`+one_goods.img+`">
+                   <span class="vido_sp1">`+one_goods.biaoti+`</span>
+                   <span class="vido_sp2">`+one_goods.pinglun+`</span>
+                   <span class="vido_sp3">`+one_goods.tishi +`</span>
+               </div>`
+         }
+         content_str+=`<div class="xia_hua"></div>
+               <div class="huang_yi">
+                <div>
+                    <img src="./images/图标 6.svg">
+                </div>
+                <span>换一批试试</span>
+               </div>
+               </div>
+               `
+    }
+    $(".neiron").append($(content_str))
+    $(".vido_ge").each(function(index,item){
+        if(index%2==0){
+            $(item).css("margin-right", "1.3rem")
+        }
+        // console.log(".vido_ge")
+    })
+    
+    
+</script>
+
+</html>

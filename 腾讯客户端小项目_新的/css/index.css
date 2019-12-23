@@ -1,0 +1,218 @@
+.jiemian {
+    width: 23.44rem;
+    height: 41rem;
+    box-shadow: 2px 2px 48px #888888;
+
+}
+.taohang {
+    width: 23.44rem;
+    height: 4rem;
+
+}
+.neiron,
+.duanshiping,
+.pingdao,
+.wode {
+    width: 22.5rem;
+    height: 34rem;
+    margin: 0px auto;
+    overflow:scroll;
+}
+.duanshiping,
+.pingdao,
+.wode {
+    display: none;
+}
+.anjian{
+    width: 23.44rem;
+    height: 3rem;
+    display: flex;
+}
+.tabbar_item{
+    flex: 1;
+    text-align: center;
+}
+.tabbar_item>div>img{
+width: 1.5rem;
+height: 1.5rem;
+}
+.tabbar_item>span{
+    font-size: 1rem;
+}
+
+/*  */
+.sousuo {
+    width: 22.5rem;
+    height: 1.63rem;
+    line-height: 1.63rem;
+    margin-bottom: 1rem;
+}
+
+.sou_img {
+    width: 1.63rem;
+    height: 1.63rem;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-right: 0.5rem;
+
+}
+
+.sou_img>img {
+    widows: 1.63em;
+    ;
+    height: 1.63rem;
+}
+
+.sou_wen {
+    width: 8.25rem;
+    height: 1.12rem;
+    font-size: 1rem;
+    border: none;
+}
+
+.da_tu {
+    width: 22.5rem;
+    height: 13.84rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.da_tu>img {
+    width: 22.5rem;
+    height: 12.12rem;
+    margin-bottom: 0.3rem;
+}
+
+.da_du_sp1 {
+
+    width: 16.63rem;
+    height: 1.31rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.da_du_sp2{
+    width: 5rem;
+    height: 1.12rem;
+    font-size: 0.55rem;
+    position: absolute;
+    bottom: 2rem;
+    right: 0.2rem;
+    color: white;
+    text-align: right;
+}
+/* 视屏内容区 */
+.biao_ti {
+    width: 14rem;
+    height: 1.69rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+}
+
+.vido_ge {
+    width: 10.5rem;
+    height: 9rem;
+    display: inline-block;
+    vertical-align: bottom;
+    position:relative;
+    margin-bottom: 0.8rem;
+    
+}
+
+.vido_ge>img {
+    width: 10.5rem;
+    height: 5.9rem;
+}
+
+.vido_ge>span {
+    display: block;
+    margin: 0.3rem 0 0.3rem 0;
+}
+
+.vido_sp1 {
+    width: 10.5rem;
+    height: 1.31rem;
+    font-size: 0.88rem;
+}
+
+.vido_sp2 {
+    width: 10.5rem;
+    height: 1.12rem;
+    font-size: 0.75rem;
+    color: rgba(166, 166, 166, 1);
+}
+.vido_sp3{
+    width: 5rem;
+    height: 1.12rem;
+    font-size: 0.55rem;
+    position: absolute;
+    bottom: 3rem;
+    right: 0.2rem;
+    color: white;
+    text-align: right;
+}
+.xia_hua {
+    margin-top: 0.5rem;
+    width: 22.5rem;
+    height: 0.06rem;
+    background-color: rgb(136, 135, 133);
+}
+
+.huang_yi>span {
+    display: inline-block;
+    width: 3.75rem;
+    height: 1.12rem;
+    font-size: 0.75rem;
+
+}
+
+.huang_yi {
+    /* display: inline-block; */
+    width: 5rem;
+    height: 1.12rem;
+    margin: 0 auto;
+}
+
+.huang_yi>div>img {
+    display: inline-block;
+    width: 0.88rem;
+    height: 0.88rem;
+}
+
+.huang_yi>div {
+    display: inline-block;
+    vertical-align: bottom;
+}
+.neiron_kuai{
+    margin-bottom: 2rem;
+    width: 22.5rem;
+}
+.zuihou {
+    width: 22.5rem;
+   
+    
+}
+.zuihou_shi{
+    width: 22.5rem;
+    /* height: 9rem; */
+    overflow-x: scroll;
+    display: flex;
+}
+/* 自定义浏览器滚动条 */
+
+.zuihou_shi::-webkit-scrollbar {
+    display: none;
+}
+
+.zuihou_shi>div {
+    flex: none;
+    margin-right: 1.8rem;
+    font-size: 1rem;
+}
+.dianshi{
+    width: 22.5rem;
+}
+.evey{
+    width: 23.44rem;
+    height: 34rem;
+}

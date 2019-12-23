@@ -1,0 +1,60 @@
+.jiemian {
+    width: 23.44rem;
+    height: 41rem;
+    box-shadow: 2px 2px 48px #888888;
+
+}
+.taohang {
+    width: 23.44rem;
+    height: 4rem;
+
+}
+
+.shiping {
+    width: 22.5rem;
+    height: 37rem;
+}
+.s_img{
+    width: 23.44rem;
+    height: 13.12rem;
+    border: 0rem;
+}
+.s_img>img{
+    width: 23.44rem;
+    height: 13.12rem;
+    display: block;
+}
+.s_pinglun{
+    width: 23.44rem;
+    height: 23.88rem;
+    overflow: hidden;
+    overflow-y: scroll;
+    border: 0rem;
+    background-color: rgba(29, 33, 42, 1);
+}
+.guanggao{
+  width: 21.56rem;
+  height: 3rem;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 1rem;
+  border-bottom: 0.1rem solid rgba(153, 153, 153, 0.2) ;
+}
+.g_wen{
+    flex: 2;
+}
+.g_tishi{
+    flex: 1;
+}
+.g_tishi>span{
+    width: 6rem;
+    height: 2.12rem;
+    display: block;
+    border-radius: 1.1rem;
+	font-size: 0.75rem;
+	line-height: 2.12rem;
+    text-align: center;
+    color: rgba(166, 166, 166, 1);
+    background-color: rgba(153, 153, 153, 0.1);
+    
+}
