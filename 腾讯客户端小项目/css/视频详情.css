@@ -56,5 +56,50 @@
     text-align: center;
     color: rgba(166, 166, 166, 1);
     background-color: rgba(153, 153, 153, 0.1);
+   
+}
+.s_xiaoxi::-webkit-scrollbar {
+    display: none;
+}
+
+
+.s_huifu{
+    width: 23.44rem;
+    background-color: rgba(29, 33, 42, 1);
+}
+.s_huifu_one{
+    width: 21.56rem;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 1rem;
+}
+.s_huifu_one>img{
+    width: 1.63rem;
+    height: 1.63rem;
+    border-radius: 0.88rem;
+   margin-right: 0.5rem;
+}
+.s_huifu_one>div{
+    display: inline-block;
+    top:-0.2rem;
+    position: absolute;
+    background-color: rgba(16, 19, 28, 1);
+	border-radius: 0.22rem;
+    width: 19rem;
+    height: 2.12rem;
+    line-height: 1.7rem;
+}
+.s_huifu_one>div>span{
+    color: rgba(166, 166, 166, 1);
+    font-size: 0.75rem;
     
+}
+.s_huifu_two{
+    width: 21.56rem;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+}
+.s_huifu_two>div{
+    width: 21.56rem;
+    margin: 0 auto;
 }
