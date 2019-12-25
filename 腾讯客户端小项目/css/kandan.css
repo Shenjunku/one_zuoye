@@ -1,0 +1,66 @@
+.jiemian {
+    width: 23.44rem;
+    height: 41rem;
+    box-shadow: 2px 2px 48px #888888;
+
+}
+.taohang {
+    width: 23.44rem;
+    height: 4rem;
+
+}
+
+.jilu {
+    width: 22.5rem;
+    height: 34rem;
+}
+.j_duo{
+    width: 21.56rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+.j_duo_one{
+    width: 8.13rem;
+    height: 4.62rem;
+    display: inline-block;
+    vertical-align: bottom;
+    position: relative;
+}
+.j_duo_one>img{
+    width: 8.13rem;
+    height: 4.62rem;
+    border-radius: 0.22rem;
+}
+.j_duo_one>div{
+    width: 1.88rem;
+    height: 1.12rem;
+    position: absolute;
+    right: 0.4rem;
+    top: 0.2rem;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 141, 26, 1);
+    border-radius: 0.22rem;
+    font-size: 0.75rem;
+    text-align: center;
+}
+.j_duo_two{
+    display: inline-block;
+    width: 12.75rem;
+    height: 4.62rem;
+    vertical-align: bottom;
+}
+.j_duo_two>div{
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}.j_duo_two>span{
+    color: rgba(166, 166, 166, 1);
+    font-size: 0.88rem;
+}
+.bianji{
+    width: 23.44rem;
+    height: 3rem;
+    border-top: 0.05rem solid rgba(166, 166, 166, 1);
+    text-align: center;
+    line-height: 3rem;
+}
+

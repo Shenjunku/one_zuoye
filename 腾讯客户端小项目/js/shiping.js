@@ -222,15 +222,15 @@ $(".s_pian>div>span").eq(1).css({
 
 var a = [
     {
-        one: "./img/2.jpeg",
+        one: "./img/8.jpeg",
         two: " 华晨宇聊到魔音选手心疼落泪：没想到陆政廷会被淘汰..."
     },
     {
-        one: "./img/3.jpeg",
+        one: "./img/2.jpeg",
         two: " 文兆杰专访：没想过自己会复活，以后不会在让花花失望"
     },
     {
-        one: "./img/4.jpeg",
+        one: "./img/3.jpeg",
         two: " 斯外戈专访：能复活超开心，最对不起和感谢的人是春春"
     },
 ]
@@ -335,5 +335,107 @@ $(".s_pingxing>div>div>div").css({
     "color": "white",
 })
 
+$(".s_huifu_two_one").css({
+    "width":"21.56rem",
+    "margin":"0 auto"
+})
+$(".s_huifu_two_one>div").eq(0).css({
+    "width":"21.56rem",
+    "display":"flex",
+    "height":"2rem"
+})
+$(".s_huifu_two_one>div>div").eq(0).css({
+    "flex":"4",
+    "position": "relative"
+})
+$(".s_huifu_two_one>div>div>img").css({
+    "width": "1.63rem",
+    "height": "1.63rem",
+    "border-radius": "0.88rem",
+})
+$(".s_huifu_two_one>div>div>span").eq(0).css({
+    "width": "0.92rem",
+    "height": "1.12rem",
+    "color":"rgba(24, 84, 150, 1)",
+    "display": "inline-block",
+    "position":" absolute",
+    "top":"0rem",
+    "left":"2.5rem"
+    
+})
+$(".s_huifu_two_one>div>div>span").eq(1).css({
+    "width": "1rem",
+    "height": "1rem",
+    "color":"rgba(212, 48, 48, 1)",
+    "display": "inline-block",
+    "border": " 0.07rem rgba(212, 48, 48, 1) solid ",
+	"border-radius": "0.22rem",
+    "font-size": "0.75rem",
+    "text-align":"center",
+    "position":" absolute",
+    "top":"0.2rem",
+    "left":"4rem"
+    
+})
+$(".s_huifu_two_one>div>div").eq(1).css({
+    "flex":"1",
+    "line-height":"2rem",
+    "position": "relative"
+})
+
+$(".s_huifu_two_one>div>div>img").eq(1).css({
+    "width": "1rem",
+    "height": "1rem",
+    "border-radius": "0.88rem",
+    "margin-right":"1.2rem"
+})
+$(".s_huifu_two_one>div>div>img").eq(2).css({
+    "width": "1rem",
+    "height": "1rem",
+    "border-radius": "0.88rem",
+    
+})
+$(".s_huifu_two_one>div>div>span").eq(2).css({
+    "color":"rgba(166, 166, 166, 1)",
+    "display": "inline-block",
+    "font-size": "0.75rem",
+    "width": "1rem",
+    "height": "1rem",
+    "position":" absolute",
+    "top":"-0.1rem",
+    "left":"1.3rem",
+})
 
 
+$(".s_huifu_two_one>span").css({
+  "color":"rgba(166, 166, 166, 1)",
+  "font-size":"0.75rem"
+})
+
+$(".s_huifu_two_two>span").eq(0).css({
+    "color":"rgba(24, 84, 150, 1)",
+    "font-size":"0.75rem"
+})
+$(".s_huifu_two_two>span").eq(1).css({
+    "color":"rgba(166, 166, 166, 1)",
+    "font-size":"0.75rem"
+})
+$(".s_huifu_two_three>span").eq(0).css({
+    "color":"rgba(24, 84, 150, 1)",
+    "font-size":"0.75rem"
+})
+$(".s_huifu_two_three>span").eq(1).css({
+    "color":"rgba(166, 166, 166, 1)",
+    "font-size":"0.75rem"
+})
+$(".s_huifu_two_three").css({
+"margin-bottom":"1.5rem"
+})
+
+
+var dianji=document.querySelector(".t_one>img")
+
+dianji.onclick=function(){
+    //location.href='index.html'
+    history.back(-1)
+}

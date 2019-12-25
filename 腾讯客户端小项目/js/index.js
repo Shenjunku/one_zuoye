@@ -4,7 +4,7 @@ $(".tabbar_item").click(function () {
     $(".tabbar_item").each(function (index, item) {
         //index()不传递参数，返回这个元素在同辈中的索引位置
         if (dian_index == index) {
-            console.log(index)
+            //console.log(index)
             var cur_src = $(item).find("img").attr("src")
             //indexOf() 方法可返回数组中某个指定的元素位置
             //如果在数组中没找到指定元素则返回 -1。
@@ -240,3 +240,16 @@ $(".da_tu>img").click(function(){
 })
 
 
+
+$(".sou_img>img").click(function(){
+    location.href='腾讯视屏-搜索.html'
+})
+$("input[type='text']").click(function(){
+    location.href='腾讯视屏-搜索.html'
+})
+var wode=$(".wode")[0]
+//console.log($(".wode").css("display"))
+if($(".wode").css("display")=="block"){
+    $(".t_two").text("我的看单")
+    //console.log("daying")
+}

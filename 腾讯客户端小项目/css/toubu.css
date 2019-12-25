@@ -1,0 +1,57 @@
+.t_xiaoti{
+    width: 23.44rem;
+    height: 1.25rem;
+}
+
+.t_shang{
+    width: 23.44rem;
+    height: 2.75rem;
+    display: flex;
+}
+.t_one{
+    flex: 1;
+}
+.t_one>img{
+    margin-top: 0.5rem;
+    width: 1.88rem;
+    height: 1.88rem;
+}
+.t_two{
+    flex: 1;
+    text-align: center;
+    line-height: 2.75rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.t_three{
+    flex: 1;
+    line-height: 2.75rem;
+}
+.t_three>div{
+    width: 5.38rem;
+    height: 1.94rem;
+    background-color: rgba(166, 166, 166, 0.1);
+    border-radius: 1.03rem;
+    margin-top: 0.3rem;
+    margin-left: 2rem;
+    
+}
+.t_three_tu1{
+width: 1.41rem;
+height: 1.41rem;
+margin-left: 0.5rem;
+margin-right: 0.5rem;
+}
+.t_three_tu2{
+    width: 1.41rem;
+    height: 1.41rem;
+    
+}
+.t_three>div>div{
+    display: inline-block;
+    width: 0.06rem;
+    height: 1.13rem;
+    background-color: rgba(56, 56, 56, 1);
+    margin-right: 0.5rem;
+}

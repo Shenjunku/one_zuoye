@@ -1,0 +1,154 @@
+.sou_suo_one {
+    width: 23.44rem;
+    position: relative;
+    margin-top: 1rem;
+    height: 3rem;
+    border-bottom: 0.05rem solid rgba(153, 153, 153, 0.2);
+    ;
+}
+
+.sou_suo_one>img {
+    width: 1.63rem;
+    height: 1.63rem;
+    position: absolute;
+    top: 0.4rem;
+    left: 0.2rem;
+}
+
+.sou_suo_one>input[type='text'] {
+    width: 17rem;
+    height: 2.19rem;
+    color: rgba(80, 80, 80, 1);
+    background-color: rgba(166, 166, 166, 0.1);
+    border: none;
+    border-radius: 0.37rem;
+    font-size: 0.88rem;
+    
+    margin-right: 1rem;
+    padding-left: 2rem;
+}
+
+.sou_suo_one>span {
+    color: rgba(255, 141, 26, 1);
+}
+
+.sou_suo_two {
+    width: 21.56rem;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 1rem;
+}
+
+.sou_suo_two_1 {
+    flex: 10;
+}
+
+.sou_suo_two_1>span {
+    color: rgba(166, 166, 166, 1);
+    font-size: 0.9rem;
+}
+
+.sou_suo_two_2 {
+    flex: 1;
+}
+
+.sou_suo_two_2>img {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.sou_suo_three, .sou_suo_four {
+    width: 21.56rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.sou_suo_three>div {
+    width: 10.62rem;
+    height: 2rem;
+    text-align: center;
+    line-height: 2rem;
+    color: rgba(80, 80, 80, 1);
+    background-color: rgba(166, 166, 166, 0.1);
+    border-radius: 0.22rem;
+}
+
+.sou_suo_five {
+    width: 23.44rem;
+    margin-top: 1rem;
+}
+
+.sou_suo_five_quan {
+    width: 22.56rem;
+    height: 2rem;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 0.7rem;
+}
+.sou_xiahua{
+    width: 22.56rem;
+    height: 0.05rem;
+    background-color: rgba(153, 153, 153, 0.2);
+    margin: 0 auto;
+}
+.sou_suo_five_quan>div {
+    display: inline-block;
+}
+
+.sou_suo_five_1 {
+    width: 1rem;
+    height: 1rem;
+    flex: 0.5;
+    border-radius: 0.15rem;
+    
+    text-align: center;
+    line-height: 1rem;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 0.2rem;
+}
+.sou_suo_five_2>span{
+    margin-left: 0.5rem;
+    font-size: 0.88rem;
+}
+.sou_suo_five_2 {
+    color: rgba(0, 0, 0, 1);
+    flex: 6.5;
+}
+
+.sou_suo_five_3 {
+    flex: 1;
+    color: rgba(166, 166, 166, 1);
+    position: relative;
+}
+.sou_suo_five_4 {
+    width: 0.63rem;
+    height: 0.12rem;
+    background-color: rgba(153, 153, 153, 1);
+    border-radius: 0.07rem;
+    position: absolute;
+    top:0.6rem;
+    left: 0.15rem;
+}
+.sou_suo_five_3>img{
+    width: 0.87rem;
+    height: 0.87rem;
+}
+
+
+.anjian{
+    width: 23.44rem;
+    height: 3rem;
+    display: flex;
+    margin-top: 0.4rem;
+}
+.tabbar_item{
+    flex: 1;
+    text-align: center;
+}
+.tabbar_item>div>img{
+width: 1.5rem;
+height: 1.5rem;
+}
+.tabbar_item>span{
+    font-size: 1rem;
+}

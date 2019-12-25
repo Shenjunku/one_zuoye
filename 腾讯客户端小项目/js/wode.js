@@ -37,3 +37,7 @@ for(var i=0;i<arry.length;i++){
 }
 $(".w_jilu").append($(zhi))
 $(".w_jilu>div").first().css("margin-left","1rem")
+
+$(".w_huiyuan").click(function(){
+    location.href='腾讯视屏-我的看单.html'
+})
