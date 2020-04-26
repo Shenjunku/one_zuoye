@@ -1,0 +1,179 @@
+.base {
+    padding: 50px 90px 230px 90px;
+    background-color: white;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.base_img {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-bottom: 55px;
+}
+
+.base_img img {
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+}
+
+.base_img .editor {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100px;
+    height: 30px;
+    background-color: rgba(112, 108, 103, 0.5);
+    text-align: center;
+    color: rgb(223, 217, 217);
+    line-height: 25px;
+}
+
+.my_management p {
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+.my_management p i {
+    font-size: 20px;
+    padding-right: 10px;
+    padding-left: 5px;
+}
+
+.my_management p:hover i {
+    color: rgb(0, 170, 255);
+}
+
+.my_management p:hover span {
+    color: rgb(0, 170, 255);
+}
+
+.my_management .my_management_one i {
+    color: rgb(0, 170, 255);
+}
+
+.my_management .my_management_one span {
+    color: rgb(0, 170, 255);
+}
+
+.form_base {
+    width: 950px;
+    background-color: white;
+    /* padding-top: 55px; */
+}
+.after_submission{
+    padding-top: 55px;
+}
+.before_submission{
+    padding-top: 23px;
+}
+.form_list {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.form_list_write {
+    width: 100px;
+    text-align: right;
+    color: rgb(223, 217, 217);
+    padding-right: 25px;
+}
+
+.editor_pencil {
+    position: absolute;
+    right: 50px;
+    top: 0px;
+}
+
+.editor_pencil {
+    cursor: pointer;
+}
+
+.editor_pencil i {
+    font-size: 18px;
+    color: rgb(0, 170, 255);
+}
+
+.editor_pencil span {
+    color: rgb(0, 170, 255);
+}
+.color{
+    color: rgb(223, 217, 217);
+    width: 75px;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 25px 30px;
+}
+.yes_btn{
+    position: absolute;
+    left: 195px;
+    top:10px;
+}
+.yes_btn i{
+    color: rgb(108, 235, 57);
+}
+.yes_btn span{
+    color: rgb(108, 235, 57);
+}
+.bas_birth{
+    background-color: white;
+}
+.base_input {
+    padding-left: 20px;
+    width: 420px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1.5px solid rgb(223, 217, 217);
+    outline: none;
+}
+.sex_select{
+    position: absolute;
+    height: 30px;
+    outline: none;
+    border: 0px;
+    top:1px;
+    right: 10px;
+    z-index: 99;
+}
+.base_code{
+    padding-left: 20px;
+    width: 250px;
+    height: 30px;
+    border: 1.5px solid rgb(223, 217, 217);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    outline: none;
+    border-right: 0px;
+}
+.form_code{
+    width: 170px;
+    height: 33px;
+    outline: none;
+    border: 1.5px solid rgb(223, 217, 217);
+    cursor: pointer;
+    background-color: white;
+    position: absolute;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.form_btn {
+    width: 170px;
+    height: 35px;
+    margin-left: 20px;
+    border-radius: 10px;
+    border: 1.5px solid rgb(223, 217, 217);
+    cursor: pointer;
+    background-color: white;
+    outline: none;
+}
+
+
+.form_btn_color {
+    background-color: rgb(0, 170, 255);
+    border: 0px;
+}

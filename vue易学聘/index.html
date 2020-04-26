@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/basic.css">
+</head>
+
+<body>
+
+    <div id="app">
+        <header-component></header-component>
+        <main-component></main-component>
+        <footer-bottom></footer-bottom>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+
+<script>
+    //头部组件
+    Vue.component('header-component', {
+
+        template: `
+    <header>
+        <header-one></header-one>
+        <header-nav></header-nav>
+    </header>
+        `
+    })
+    // 头部子组件
+    Vue.component('header-one', {
+        template: `
+        <div class="wrapper flex header_content">
+            <div class="header_logo flex">
+                <div class="h_logo_img">
+                </div>
+                <p>易学聘</p>
+                <span>让学习成为习惯</span>
+            </div>
+            <div class="flex head_portrait">
+                <a href="javascript:;">
+                    <div class="head_portrait_img"></div>
+                </a>
+                <span>罗密欧</span>
+                <i class=" fa fa-chevron-down"></i>
+            </div>
+        </div>
+        `
+    })
+    //头部子组件导航条
+    Vue.component('header-nav', {
+        data: function () {
+            return {
+                switch_list: [
+                    { content: 'My Center' },
+                    { content: '基本信息' },
+                    { content: '课程管理' },
+                    { content: '我的问答' }
+                ],
+                isActive: 0,
+                // flag:"true"
+            }
+        },
+        methods: {
+            greet: function (index) {
+                this.isActive = index
+                //console.log(this.isActive)
+                bus.$emit('on-message', this.isActive);
+            },
+
+        },
+        template: `<nav class="nav ">
+            <div class="wrapper flex navigation">
+                <ul class="flex nav_ul">
+                <li v-for="(item,index) in switch_list" class="nav_ul_list">
+                <a href="javascript:;" v-on:click='greet(index)' :class="{active:index==isActive}">{{item.content}}</a>
+                </li>
+                </ul>
+                <div class="nav_btn">
+                 <i class="fa fa-plus"></i> 添加课程
+                </div>
+            </div>
+        </nav>`
+    })
+
+    //中间区域
+    Vue.component('main-component', {
+        data: function () {
+            return {
+                isActive: '0',
+            }
+        },
+        template: `
+        <main>
+            <section class="wrapper flex"  v-if="isActive==0">
+             <user-content></user-content>
+             <user-two></user-two>
+             </section>
+             <section class="wrapper flex" v-else-if="isActive==1">
+                <base-content></base-content>
+                <form-base></form-base>
+             </section>
+             <section class="wrapper flex" v-else-if="isActive==2">
+               <h1>这里是课程管理
+                </h1>
+             </section>
+             <section class="wrapper flex" v-else-if="isActive==3">
+                <h1>这里是我的问答
+                </h1>
+             </section>
+              
+        </main>
+        `,
+        mounted() {//在模板编译完成后执行
+            var that = this;
+            bus.$on('on-message', function (message) {
+                that.isActive = message;
+                //console.log(that.isActive)
+            })
+        }
+    })
+    
+    //中间区域的子组件
+    Vue.component('user-content', {
+       
+        template: `
+       <div class="user_content">
+                   <user-information></user-information>
+                   <user-account-balance></user-account-balance>
+                    <certification-fa></certification-fa>
+
+                </div>
+       `
+    })
+
+    //user-content的子组件
+    Vue.component('user-information',{
+        data: function () {
+            return {
+                user_information:this.$root.user_information_a,
+                new_students_list:this.$root.new_students_list_a
+            }
+        },
+        template:`
+        <div class="user_information flex">
+                        <div class="user_information_img">
+                            <img v-bind:src="user_information.user_img">
+                        </div>
+                        <div class="user_information_content">
+                            <div class="user_information_content_one ">
+                                <span>{{user_information.name}}</span>
+                                <img v-bind:src="user_information.sex" class="user_sex">
+                            </div>
+                            <div class="flex user_information_content_two">
+                                <span class="integrity">信息完整度</span>
+                                <div class="integrity_length"></div>
+                                <span class="integrity_level">高</span>
+                            </div>
+                            <div class="user_information_content_three">
+                                <i class="fa fa-mobile"></i>
+                                <i class="fa fa-id-card-o"></i>
+                                <i class="fa fa-envelope-o"></i>
+                            </div>
+                        </div>
+                    </div>
+
+        `
+    })
+
+    //user-content的子组件
+    Vue.component('user-account-balance',{
+        data: function () {
+            return {
+                user_information:this.$root.user_information_a,
+                new_students_list:this.$root.new_students_list_a
+            }
+        },
+        template:`
+        <div class="user_account_balance flex">
+                        <div class="apply_for">
+                            申请提现
+                        </div>
+                        <div class="account_balance ">
+                            <p>账户余额</p>
+                            <span class="account_balance_number">{{user_information.account_balance}}</span>
+                            <span>元</span>
+                        </div>
+                    </div>
+        `
+    })
+
+    //user-content的认证父组件
+    Vue.component('certification-fa', {
+
+        template: `
+     <div class="certification flex">
+        <certification-zi-one :user_list="{ id: '1', img: 'image/4.jpg'}"></certification-zi-one>
+        <certification-zi-one :user_list="{ id: '2', img: 'image/3.jpg'}"></certification-zi-one>
+     </div>
+     `
+    })
+    //user-content的认证子组件
+    Vue.component('certification-zi-one', {
+        // data: function () {
+        //     return {
+        //         user_list: { id: '1', img: 'image/4.jpg' },
+        //     }
+        // },
+        props: ['user_list'],
+        template: `
+      <div class="certification_one">
+         <div class="certification_img">
+            <img v-bind:src="user_list.img">
+        </div>
+        <div class="certification_content">
+            <span class="certification_one_s">实名认证</span>
+            <span class="certification_one_p">【未认证】</span>
+            </div>  
+    </div>
+      `
+    })
+
+    Vue.component('user-two', {
+       
+        template: `<div class="user_two">
+                    <user_course></user_course>
+                    <new_students></new_students>
+                </div>
+
+        `
+    })
+
+    //user-two的子组件
+    Vue.component('user_course',{
+        data: function () {
+            return {
+                user_information:this.$root.user_information_a,
+                new_students_list:this.$root.new_students_list_a
+            }
+        },
+        template:`
+        <div class="user_course flex">
+                        <div class="user_my_course">
+                            <p>我上传的课程</p>
+                            <p class="course_number"><span>{{user_information.my_course}}</span><span>个</span></p>
+                            <a class="details" href="javascript:;">
+                                <span>查看详情</span>
+                                <i class="fa fa-chevron-right"></i>
+                            </a>
+                        </div>
+                        <div class="user_my_course">
+                            <p>我的问答</p>
+                            <p class="course_number"><span>{{user_information.my_answer}}</span><span>个</span></p>
+                            <a class="details" href="javascript:;">
+                                <span>查看详情</span>
+                                <i class="fa fa-chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+        `
+    })
+    
+   //user-two的子组件
+   Vue.component('new_students',{
+    data: function () {
+            return {
+                user_information:this.$root.user_information_a,
+                new_students_list:this.$root.new_students_list_a
+            }
+        },
+       template:`
+       <div class="new_students">
+                        <div class="flex new_students_content ">
+                            <p>最新学员</p>
+                            <span>一周内新增25名学员</span>
+                        </div>
+                        <ul class="clearfix new_students_ul">
+                            <li v-for="item in new_students_list" :key=item.name class="left students_list">
+                                <img :src="item.new_img">
+                                <div class="new_students_name">
+                                    <span>{{item.name}}</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+       `
+   })
+   
+
+   //底部组件 
+   Vue.component('footer-bottom',{
+       template:`
+       <footer>
+            <div class="wrapper fotter_bomtom">
+                <p>
+                    <span>中国领先大学生平台</span>
+                    <span class="footer_time">c2016</span>
+                    <span>e学聘</span>
+                </p>
+                <div class="footer_link">
+                    <a href="javascript:;" class="footer-link_number">ICP备165000007好</a>
+                    <a href="javascript:;" class="footer_contact">
+                        <span>联系我们</span>
+                        <span>exuepen@exuepin@qq.com</span>
+                    </a>
+                    <a href="javascript:;" class="footer_about">
+                        关于我们
+                    </a>
+                </div>
+
+            </div>
+        </footer>
+
+       `
+   })
+    //创建一个空的 Vue 实例作为中央事件总线，实现非父子组件之间的通信
+    var bus = new Vue();
+
+    var app = new Vue({
+        el: "#app",
+        data: {
+            //用户个人信息
+            user_information_a: {
+                name: "罗密欧",
+                user_img: "image/touxiang1.jpg",
+                sex: "image/6_03.jpg",
+                // 账户余额
+                account_balance: 248,
+                //我的课程
+                my_course: 3,
+                //我的问答
+                my_answer: 3,
+                //是否实名认证
+                real_name: false,
+                //是否资质认证
+                qualification: false
+            },
+            new_students_list_a: [
+                {
+                    new_img: "image/touxiang2.jpg",
+                    name: "杨紫"
+                },
+                {
+                    new_img: "image/touxiang3.jpg",
+                    name: "杨晶晶"
+                },
+                {
+                    new_img: "image/touxiang4.jpg",
+                    name: "李子柒"
+                },
+                {
+                    new_img: "image/touxaing5.jpg",
+                    name: "张晓雪"
+                },
+                {
+                    new_img: "image/touxaing6.jpg",
+                    name: "郭晓燕"
+                },
+            ]
+        },
+        
+    })
+</script>
+<script src="js/basic.js"></script>
+
+</html>
